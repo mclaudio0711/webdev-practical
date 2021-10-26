@@ -8,5 +8,111 @@
      <body>
          <p class="class-name">This is an Example Paragraph Element, everything between the "p" tags is part of the paragraph.</p>
          <p id="id-name">This is an Example Paragraph Element, everything between the "p" tags is part of the paragraph.</p>
+
+
+         <a href="http://www.tutorialehtml.com/" title="HTML 5" target="_blank" >Html 5</a>
+         <br /><a href="#top">Go to top </a> (<a name="top"></a>)
+         <br /><a href="mailto:admin@exemplu.com" >Contact us</a>
+         <br /><a href="http://www.tutorialehtml.com/" title="HTML 5" target="_blank" ><img src="img/html_image.jpg" alt="HTML 5" /></a> 
+         <br /><base href="http://www.tutorialehtml.com/">
+
+         HTML - Forms
+         This is just one example of HTML code used to create a form. It is what a user might use to enter information. But to process such information you need a PHP file (for example) that sends the info to the database, mailed, etc.
+         
+         HTML
+         <form method="post" name="myform" action="process.php">
+             <!--text fields used to enter information-->
+             <input type="submit" value="Send">
+             <input type="reset" value="Delete" />
+         </form>
+         HTML - Text fields
+         Below are a few examples of HTML text fields.
+         
+         HTML
+         <input type="text" size="10" maxlength="40" name="name"> --> regular text field
+         <input type="password" size="10" maxlength="10" name="pass"> --> password field
+         <input type="radio" name="color" value="red"> --> radio button
+         <input type="checkbox" name="check" value="yes"> --> checkbox 
+         <select name="select">  --> simple select list / drop-down list
+            <option>Html 4.1</option> 
+            <option>Html 5</option> 
+         </select>
+         
+         HTML - table
+         The basic structure of a table in HTML is as follows:
+         
+         HTML
+         <table>
+            <tr> 
+               <th>Columna 1</th>
+               <th>Columna 2</th>
+            </tr>
+            <tr>
+               <td>Fila 1 Celda 1</td>
+               <td>Fila 1 Celda 2</td>
+            </tr>
+            <tr>
+               <td>Fila 2 Celda 1</td>
+               <td>Fila 2 Celda 2</td>
+            </tr>
+         </table>
+         
+         Html - Bgcolor
+         Bgcolor is used to set the background color. Here I leave a few examples of how to use it:
+         
+         HTML
+         <body bgcolor="#efefef">
+         <div bgcolor="#888888">
+         <table bgcolor="#000000"> - etc.
+         Html - Background
+         To add a background image will use the following html code.
+         
+         HTML
+         <table background="img/pattern.jpg">
+         HTML - Comments
+         HTML
+         <!-- Este es un simple comentario html-->
+         Html - Embed (Music and sound)
+         To insert music or sound in a HTML document use embed tag, as follows
+         
+         HTML
+         <embed src="example.mp3" hidden="false" autostart="false" loop="false" volume="60" width="144" height="60" />
+         Html - Object (Video)
+         To insert video in a HTML document use embed tag, as follows:
+         
+         HTML
+         <object width="425" height="344">
+             <param name="movie" value="http://www.youtube.com/v/wViILXQfX7Y&hl=en&fs=1"></param>
+             <param name="allowFullScreen" value="true"></param>
+             
+             <embed src="http://www.youtube.com/v/wViILXQfX7Y&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344">
+         </embed>
+         </object>
+         HTML - Bold
+         HTML
+         <b>Bold HTML text</b>
+         <strong>Strong HTML text</strong>
+         HTML - Italic
+         HTML
+         <i>Italic</i>
+         <em>Emphasized</em>
+         HTML - Subscript, Superscript, Striketrough
+         Exponent, index, and cut text. Although not widely used, it is worth mentioning.
+         
+         HTML
+         <sub>Index!</sub>
+         <sup>Exponent</sup>
+         <del>Cutted text</del>
+         HTML - Uploading and hidden fields
+         The form below is used to upload a file to the server. Do not forget that it is just the HTML part. To make it functional you should process it using PHP, asp, or any other server-side language.
+         
+         HTML
+         <form method="post" action="process.php"> 
+             <input type="hidden" name="MAX_FILE_SIZE" value="500" /> 
+             <input type="file" />
+             <input type="submit" value="Upload">
+             <input type="reset" value="Reset" />
+         </form>         
+ 
      </body>
 </html>
