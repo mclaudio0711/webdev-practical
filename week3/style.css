@@ -1,0 +1,14 @@
+.outer{
+    font-weight: bold;                
+    }
+ #red{
+     color:red;
+ }
+ 
+ .example_url {
+     background-image: url('images/picture.jpg');
+     background-size: cover;
+     border: 2px solid var(--color-topaz);
+     margin-top: var(--size-epsilon);
+     padding-top: calc(9 / 12 * 100%);
+   }
